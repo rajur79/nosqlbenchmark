@@ -1,0 +1,20 @@
+[Authentication]
+Provider = pam
+
+[PAM]
+Service = rstudio-connect
+
+[Applications]
+RunAsCurrentUser = true
+
+[Server]
+Address = "http://13.40.192.64"
+DataDir = "/var/lib/rstudio-connect"
+EmailProvider = "none"
+TempDir = "/tmp"
+
+[Database]
+Provider = "SQLite"
+
+[SQLite]
+Dir = "/var/lib/rstudio-connect/db"
