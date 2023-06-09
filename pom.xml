@@ -334,7 +334,7 @@
                 <plugin>
                     <groupId>net.alchim31.maven</groupId>
                     <artifactId>scala-maven-plugin</artifactId>
-                    <version>3.2.1</version>
+                    <version>4.4.0</version>
                     <executions>
                         <execution>
                             <id>scala-compile-first</id>
@@ -363,7 +363,7 @@
                                 </args>
                             </configuration>
                         </execution>
-                        <execution>
+                        <!--<execution>
                             <id>attach-javadocs</id>
                             <goals>
                                 <goal>doc-jar</goal>
@@ -373,7 +373,7 @@
                                     <arg>${scaladoc.arg}</arg>
                                 </args>
                             </configuration>
-                        </execution>
+                        </execution>-->
                     </executions>
                 </plugin>
                 <plugin>
@@ -509,7 +509,7 @@
                     <argLine>${extraJavaTestArgs}</argLine>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.10.4</version>
@@ -525,7 +525,7 @@
                     <failOnError>false</failOnError>
                     <additionalparam>-Xdoclint:none</additionalparam>
                 </configuration>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <groupId>org.apache.rat</groupId>
                 <artifactId>apache-rat-plugin</artifactId>
